@@ -797,6 +797,9 @@ td, th {
   .no-flex-xs {
     display: block !important;
   }
+   h2 {
+    font-size: 20px;
+  }
 }
 
 .row.no-margin {
@@ -822,9 +825,7 @@ h1 {
   font-size: 36px;
 }
 
-h2 {
-  font-size: 20px;
-}
+
 
 h3 {
   font-size: 24px;
