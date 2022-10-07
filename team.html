@@ -30,224 +30,90 @@
 	<link href="sidebar.css" rel="stylesheet" type="text/css" />
 	<link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css" integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" rel="stylesheet" /><script src="js/snap.svg-min.js"></script><script data-ad-client="ca-pub-9061135122390856" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 <style>
-   img {
-        width: 100%;
-        height: auto;
-    }
+          body {
+              margin: 0;
+              padding: 0;
+              font-family: "montserrat";
+              background: #FFFFFF;
+          }
 
-    .container {
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        margin-right: auto;
-        margin-left: auto;
-    }
+          .team-section {
+              background: #FFFFFF;
+              text-align: center;
+          }
 
-    .section-title {
-        flex: 0 0 100%;
-        max-width: 100%;
-        margin-bottom: 80px;
-        margin-top: 40px;
-        text-align: center;
-    }
+          .inner-width {
+              max-width: 1200px;
+              margin: auto;
+              padding: 40px;
+              color: #000000;
+              overflow: hidden;
+          }
 
-        .section-title h1 {
-            display: inline-block;
-            font-size: 35px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #000000;
-            margin: 0 0 5px;
-            position: relative;
-        }
+          .team-section h1 {
+              font-size: 20px;
+              text-transform: uppercase;
+              display: inline-block;
+              border-bottom: 4px solid;
+              padding-bottom: 10px;
+          }
 
-            .section-title h1::before {
-                content: '';
-                left: 0;
-                position: absolute;
-                height: 3px;
-                right: 32%;
-                background-color: #50c5fc;
-                bottom: -5px;
-            }
+          .pe {
+              float: left;
+              width: calc(100% / 3);
+              overflow: hidden;
+              padding: 40px 0;
+              transition: 0.4s;
+              background: #FFFFFF;
+          }
 
-    .container .section-title h1::before {
-        left: 30%;
-    }
+              .pe:hover {
+                  background: #950714;
+              }
 
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        margin-right: -15px;
-        margin-left: -15px;
-    }
+              .pe img {
+                  width: 120px;
+                  height: 120px;
+              }
 
-    .column {
-        position: relative;
-        width: 100%;
-        padding-right: 15px;
-        padding-left: 15px;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+          .p-name {
+              margin: 16px 0;
+              text-transform: uppercase;
+          }
 
-    .team {
-        margin-bottom: 30px;
-    }
+          .p-des {
+              font-style: italic;
+              color:  #000000;
+          }
 
-        .team .team-img {
-            position: relative;
-            font-size: 0;
-            text-align: center;
-        }
+          .p-sm {
+              margin-top: 12px;
+          }
 
-            .team .team-img img {
-                height: auto;
-                border-radius: 20%;
-                border: 20px solid #f3f4fa;
-            }
+              .p-sm a {
+                  margin: 0 4px;
+                  display: inline-block;
+                  width: 30px;
+                  height: 30px;
+                  transition: 0.4s;
+              }
 
-        .team .team-content {
-            padding: 80px 20px 20px 20px;
-            margin-top: -80px;
-            text-align: center;
-            background: #f3f4fa;
-            border-radius: 10px;
-        }
+                  .p-sm a:hover {
+                      transform: scale(1.3);
+                  }
 
-            .team .team-content h2 {
-                font-size: 25px;
-                font-weight: 400;
-                letter-spacing: 2px;
-            }
+                  .p-sm a i {
+                      color: #333;
+                      line-height: 30px;
+                  }
 
-            .team .team-content h3 {
-                font-size: 16px;
-                font-weight: 300;
-            }
+          @media screen and (max-width:650px) {
+              .pe {
+                  width: 100%;
+              }
+          }
 
-            .team .team-content h4 {
-                font-size: 16px;
-                font-weight: 300;
-                letter-spacing: 1px;
-                font-style: italic;
-                margin-bottom: 0;
-            }
-
-            .team .team-content p {
-                font-size: 16px;
-                font-weight: 400;
-                line-height: 22px;
-            }
-
-        .team .team-social {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            padding: 35px;
-            top: 0;
-            left: 0;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: rgba(255, 255, 255, .6);
-            transition: all .3s;
-            font-size: 0;
-            z-index: 1;
-            opacity: 0;
-        }
-
-        .team:hover .team-social {
-            opacity: 1;
-        }
-
-        .team .team-social a {
-            display: inline-block;
-            width: 40px;
-            height: 40px;
-            margin-right: 5px;
-            padding: 11px 0 10px 0;
-            font-size: 16px;
-            font-weight: 300;
-            line-height: 16px;
-            text-align: center;
-            color: #ffffff;
-            border-radius: 10px;
-            transition: all .3s;
-            margin-top: 50px;
-        }
-
-            .team .team-social a.social-tw {
-                background: #00acee;
-            }
-
-            .team .team-social a.social-fb {
-                background: #3b5998;
-            }
-
-            .team .team-social a.social-li {
-                background: #0e76a8;
-            }
-
-            .team .team-social a.social-in {
-                background: #3f729b;
-            }
-
-            .team .team-social a.social-yt {
-                background: #c4302b;
-            }
-
-            .team .team-social a:last-child {
-                margin-right: 0;
-            }
-
-        .team:hover .team-social a {
-            margin-top: 0;
-        }
-
-        .team .team-social a:hover {
-            background: #222222;
-        }
-
-
-    /* Mobile Responsive */
-
-    @media (min-width: 576px) {
-        .container {
-            max-width: 540px;
-        }
-
-        .column {
-            max-width: 50%;
-        }
-    }
-
-    @media (min-width: 768px) {
-        .container {
-            max-width: 720px;
-        }
-
-        .column {
-            max-width: 33.333333%;
-        }
-    }
-
-    @media (min-width: 992px) {
-        .container {
-            max-width: 960px;
-        }
-
-        .column {
-            max-width: 25%;
-        }
-    }
-
-    @media (min-width: 1200px) {
-        .container {
-            max-width: 1140px;
-        }
-    }
-</style>
+      </style>
 </head>
 <body><!-- Google Tag Manager (noscript) --><noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM5B6RR"
 		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript><!-- End Google Tag Manager (noscript) -->
@@ -320,70 +186,29 @@
 
 <div class="main-wrapper"><!-- Start service Area -->
 <section class="service-area section-gap" id="feature">
-<div class="container">
-<div class="row d-flex justify-content-center">
-<div class="menu-content pb-60 col-lg-8">
-<div class="title text-center">
-<div class="row">
-
-
-        <div class="column">
-            <div class="team">
-                <div class="team-img">
-                    <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="Team Image">
-                </div>
-                <div class="team-content">
-                    <h2>Steven</h2>
-                    <h3>CEO & Founder</h3>
-                    <p>Some text goes here that describes about team members</p>
-                </div>
-            </div>
+<div class="team-section">
+    <div class="inner-width">
+      <div class="pers">
+        <div class="pe">
+          <img src="img/p1.png" alt="">
+          <div class="p-name">Full Name</div>
+          <div class="p-des">Designer</div>
         </div>
 
-        <div class="column">
-            <div class="team">
-                <div class="team-img">
-                    <img src="https://images.pexels.com/photos/85773/pexels-photo-85773.jpeg?cs=srgb&dl=pexels-unchalee-srirugsar-85773.jpg&fm=jpg" alt="Team Image">
-                </div>
-                <div class="team-content">
-                    <h2>Mayra</h2>
-                    <h3>Art Director</h3>
-                    <p>Some text goes here that describes about team members</p>
-                </div>
-            </div>
+        <div class="pe">
+          <img src="img/p2.png" alt="">
+          <div class="p-name">Full Name</div>
+          <div class="p-des">Designer</div>
         </div>
 
-        <div class="column">
-            <div class="team">
-                <div class="team-img">
-                    <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="Team Image">
-                </div>
-                <div class="team-content">
-                    <h2>John</h2>
-                    <h3>Developer</h3>
-                    <p>Some text goes here that describes about team members</p>
-                </div>
-            </div>
+        <div class="pe">
+          <img src="img/p3.png" alt="">
+          <div class="p-name">Full Name</div>
+          <div class="p-des">Developer</div>
         </div>
-
-        <div class="column">
-            <div class="team">
-                <div class="team-img">
-                    <img src="https://images.pexels.com/photos/56866/garden-rose-red-pink-56866.jpeg?cs=srgb&dl=pexels-pixabay-56866.jpg&fm=jpg" alt="Team Image">
-                </div>
-                <div class="team-content">
-                    <h2>Jennifer</h2>
-                    <h3>Designer</h3>
-                    <p>Some text goes here that describes about team members</p>
-                </div>
-            </div>
-        </div>
-
+      </div>
     </div>
-</div>
-</div>
-</div>
-</div>
+  </div>
 </section>
 <!-- End service Area --><!-- Start about Area --><!--<section class="about-area section-gap">
 				<div class="container">
