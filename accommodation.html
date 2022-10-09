@@ -32,7 +32,7 @@
         /* Create two equal columns that floats next to each other */
         .column {
             float: left;
-            padding: 10px;
+            padding: 0px;
             height: 300px; /* Should be removed. Only for demonstration */
         }
 
@@ -51,7 +51,10 @@
             display: table;
             clear: both;
         }
-
+	.section-top-border {
+    		padding: 0px 0 !important;
+    		border-top: 1px dotted #eee;
+	}
         /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
         @media screen and (max-width: 600px) {
             .column {
