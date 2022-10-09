@@ -43,6 +43,26 @@
     		position:absolute;
 
 	}
+		.column {
+  float: left;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+.left {
+  width: 25%;
+}
+
+.right {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 	</style>
 	<link href="img/icon.png" rel="icon" type="image/x-icon" />
 	<link href="css/linearicons.css" rel="stylesheet" />
@@ -138,14 +158,34 @@
 </section>
 	
 <section class="service-area section-gap" id="feature">
-<div class="container">
-<div class="row d-flex justify-content-center">
-<div class="menu-content pb-60 col-lg-8">
-<div class="title text-center">
-<div class="map-responsive">	
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.647152869771!2d32.855830114746055!3d39.94928159186066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f40d37d6411%3A0xbd6a725f47881323!2sANKARA%20OTEL!5e0!3m2!1str!2str!4v1665168538451!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</div>
-</div>
+<div class="row">
+  <div class="column right" style="background-color:#fff;">
+  <div class="container">
+	<div class="row d-flex justify-content-center">
+	<div class="menu-content pb-60 col-lg-8">
+	<div class="title text-center">
+	<div class="map-responsive">	
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3058.647152869771!2d32.855830114746055!3d39.94928159186066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14d34f40d37d6411%3A0xbd6a725f47881323!2sANKARA%20OTEL!5e0!3m2!1str!2str!4v1665168538451!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+	</div>
+	</div>
+	</div>
+	</div>
+  </div>  
+  </div>
+  <div class="column left" style="background-color:#fff;">
+    	<div class="whole-wrap pb-100">
+	<div class="container">
+	<div class="section-top-border">
+	<h3 class="mb-30" onselectstart="return false" style="font-size:43px">What is NAMUN?</h3>
+
+	<div class="row">
+	<div class="col-lg-12">
+	<blockquote class="generic-blockquote" onselectstart="return false" style="font-size:17px;line-height:30px">Nesibe Aydın Model United Nations is an internationally recognised prestigious conference, organised annually during December. Passion residing in ourselves coupled with the inherent notion of perfectionism present led NAMUN to be one of the most experienced and well-recognised MUN conferences in Turkey. Each year, we welcome hundreds of high school and college students to discuss and subsequently find conceivable solutions to our real-world problems in our seven committees.</blockquote>
+	<!--<blockquote onselectstart="return false"  class="generic-blockquote" style="font-size:17px;line-height:30px">
+									"Merhaba"
+								</blockquote>--></div>
+		</div>
+		</div>
 </div>
 </div>
 </div>
